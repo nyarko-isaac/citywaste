@@ -8,6 +8,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -16,9 +17,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="animate-fade-in">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary-foreground rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">♻</span>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center border-2 border-primary-foreground/20">
+                <Image
+                  src="/cycle-city-waste-logo.jpg"
+                  alt="Cycle City Waste Logo"
+                  width={40}
+                  height={40}
+                  className="w-9 h-9 object-contain"
+                />
               </div>
               <span className="font-bold text-lg">Cycle City Waste</span>
             </div>

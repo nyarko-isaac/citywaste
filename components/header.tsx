@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,10 +26,14 @@ export function Header() {
             href="/"
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">
-                ♻
-              </span>
+            <div className="w-14 h-14 rounded-full bg-linear-to-br from-primary/10 to-primary/5 flex items-center justify-center border-2 border-primary/20 shadow-sm">
+              <Image
+                src="/cycle-city-waste-logo.jpg"
+                alt="Cycle City Waste Logo"
+                width={50}
+                height={50}
+                className="w-11 h-11 object-contain"
+              />
             </div>
             <span className="font-bold text-xl text-foreground hidden sm:inline">
               Cycle City Waste
