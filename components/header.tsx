@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -14,18 +14,25 @@ export function Header() {
     { href: "/services", label: "Services" },
     { href: "/complaints", label: "Complaints" },
     { href: "/contact", label: "Contact" },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm animate-slide-in-down">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <Link
+            href="/"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">♻</span>
+              <span className="text-primary-foreground font-bold text-lg">
+                ♻
+              </span>
             </div>
-            <span className="font-bold text-xl text-foreground hidden sm:inline">Cycle City</span>
+            <span className="font-bold text-xl text-foreground hidden sm:inline">
+              Cycle City Waste
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -67,5 +74,5 @@ export function Header() {
         )}
       </nav>
     </header>
-  )
+  );
 }
