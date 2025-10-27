@@ -1,5 +1,13 @@
-import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import Link from "next/link";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -12,10 +20,11 @@ export function Footer() {
               <div className="w-8 h-8 bg-primary-foreground rounded-full flex items-center justify-center">
                 <span className="text-primary font-bold">♻</span>
               </div>
-              <span className="font-bold text-lg">Cycle City</span>
+              <span className="font-bold text-lg">Cycle City Waste</span>
             </div>
             <p className="text-sm opacity-90">
-              Leading the way in sustainable waste management and recycling solutions.
+              Leading the way in sustainable waste management and recycling
+              solutions.
             </p>
           </div>
 
@@ -69,16 +78,28 @@ export function Footer() {
           <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <h3 className="font-bold mb-4">Follow Us</h3>
             <div className="flex gap-4">
-              <a href="#" className="hover:opacity-80 transition-opacity hover:scale-110 transform">
+              <a
+                href="#"
+                className="hover:opacity-80 transition-opacity hover:scale-110 transform"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity hover:scale-110 transform">
+              <a
+                href="#"
+                className="hover:opacity-80 transition-opacity hover:scale-110 transform"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity hover:scale-110 transform">
+              <a
+                href="#"
+                className="hover:opacity-80 transition-opacity hover:scale-110 transform"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity hover:scale-110 transform">
+              <a
+                href="#"
+                className="hover:opacity-80 transition-opacity hover:scale-110 transform"
+              >
                 <Instagram size={20} />
               </a>
             </div>
@@ -102,5 +123,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
