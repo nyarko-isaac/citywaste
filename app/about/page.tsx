@@ -30,7 +30,7 @@ export default function About() {
                   Our Story
                 </h2>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Founded in 2010, Cycle City began with a simple vision: to
+                  Founded in 2020, Cycle City began with a simple vision: to
                   make sustainable waste management accessible and affordable
                   for everyone. What started as a small local operation has
                   grown into a trusted partner for hundreds of businesses and
@@ -52,8 +52,7 @@ export default function About() {
               <div
                 className="rounded-lg overflow-hidden h-96 bg-muted"
                 style={{
-                  backgroundImage:
-                    "url(/placeholder.svg?height=400&width=500&query=sustainable%20recycling%20facility%20team%20working)",
+                  backgroundImage: "url('/waste-about.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

@@ -251,8 +251,7 @@ export default function Contact() {
             <div
               className="w-full h-96 rounded-lg bg-muted border border-border"
               style={{
-                backgroundImage:
-                  "url(/placeholder.svg?height=400&width=1200&query=recycling%20facility%20location%20map)",
+                backgroundImage: "url('/facility.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
